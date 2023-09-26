@@ -1,0 +1,200 @@
+/* Basic Style */
+.body {
+    background-color: #f8f8f8;
+    color: #333;
+    font-family: Lato, sans-serif;
+  }
+  
+  .header {
+    width: 500px; 
+    margin: 0 auto;
+    display: block;
+    text-align: right;
+  }
+  
+  .header__img {
+    width: 100%;
+  }
+  
+  /* .eisenhower-matrix  */
+  .header__link {
+    font-family: fantasy, cursive;
+  }
+  
+  .main {
+    display: block;
+    width: 500px;
+    margin: 0 auto 0;
+  }
+  
+  .add-task {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .tasks-list__name,
+  .tasks-list__input-edit,
+  .input-wrapper__text {
+    width: 56%;
+    display: inline-block;
+    flex-grow: 1;
+  }
+  
+  .input-wrapper {
+    display: flex;
+  }
+  
+  .completed-tasks, 
+  .incomplete-tasks {
+    margin: 0;
+    padding: 0px;
+  }
+  
+  .edit-mode, 
+  .tasks-list,
+  .section-title {
+    list-style: none;
+  }
+  
+  .tasks-list__checkbox,
+  .input-wrapper__text,
+  .tasks-list__input-edit,
+  .tasks-list__btn-delete,
+  .input-wrapper__btn,
+  .tasks-list__btn-edit {
+    outline: none;
+  }
+  
+  .input-wrapper__btn,
+  .tasks-list__btn-edit {
+    background: none;
+    border: 0px;
+    color: #888;
+    font-size: 15px;
+    width: 60px;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+  }
+  
+  .input-wrapper__btn:hover,
+  .tasks-list__btn-edit:hover {
+    color: #3a3a3a;
+  }
+  
+  /* Heading */
+  .section-title,
+  .add-task__title {
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 2px solid #333;
+    padding: 30px 0 10px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .input-wrapper__text,
+  .tasks-list__input-edit {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 21px;
+    padding: 0 9px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: #888;
+  }
+  
+  .input-wrapper__text:focus,
+  .tasks-list__input-edit:focus {
+    color: #333;
+  }
+  
+  /* New Task */
+  .add-task__title {
+    display: block;
+    margin: 0 0 20px;
+  }
+  
+  .input-wrapper__text {
+    width: 318px;
+  }
+  
+  /* Task list */
+  .tasks-list,
+  .edit-mode {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tasks-list > *,
+  .edit-mode > * {
+    vertical-align: middle;
+  }
+  
+  .tasks-list__checkbox {
+    margin: 0 10px;
+  }
+  
+  .tasks-list__name {
+    padding-left: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 226px;
+  }
+  
+  .tasks-list__input-edit {
+    width: 226px;
+  }
+  
+  .tasks-list__btn-delete {
+    height: 2em;
+    background: none;
+    border: 0px;
+    color: #888;
+    font-size: 15px;
+    width: 60px;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+    transform: rotateZ(45deg);
+    transition: transform 200ms ease-in;
+  }
+  
+  .tasks-list__btn-delete:hover {
+    transform: rotateZ(0);
+  }
+  
+  /* Completed */
+  #completed .tasks-list__name {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  /* Edit Task */
+  .tasks-list__input-edit {
+    display: none;
+  }
+  
+  .edit-mode .tasks-list__input-edit {
+    display: inline-block;
+    width: 224px;
+  }
+  
+  .edit-mode .tasks-list__name{
+    display: none;
+  }
+  
+  @media (max-width:768px) {
+  
+    .header { 
+      text-align: center;
+    }
+  
+  }
